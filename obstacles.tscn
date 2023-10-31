@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://dsckpa6ba6lcl"]
+
+[ext_resource type="Texture2D" uid="uid://p28mxljkvto4" path="res://Pipe1.png" id="1_r3nvi"]
+[ext_resource type="Script" path="res://obstacles.gd" id="1_u6bbp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y4ee8"]
+size = Vector2(31.2, 128.8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_of506"]
+size = Vector2(30, 76.4)
+
+[node name="Obstacles" type="StaticBody2D"]
+position = Vector2(-130, -529)
+script = ExtResource("1_u6bbp")
+metadata/_edit_group_ = true
+
+[node name="Top Pipe" type="Sprite2D" parent="."]
+position = Vector2(616, 394)
+scale = Vector2(0.720721, 0.758782)
+texture = ExtResource("1_r3nvi")
+
+[node name="Top Collision" type="CollisionShape2D" parent="."]
+position = Vector2(616, 397)
+scale = Vector2(5, 5)
+shape = SubResource("RectangleShape2D_y4ee8")
+
+[node name="Bottom Pipe" type="Sprite2D" parent="."]
+position = Vector2(620, 1111)
+scale = Vector2(0.693694, 0.447307)
+texture = ExtResource("1_r3nvi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(620, 1112)
+scale = Vector2(5, 5)
+shape = SubResource("RectangleShape2D_of506")

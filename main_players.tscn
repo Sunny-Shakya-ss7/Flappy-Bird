@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://ymsnhumvi34d"]
+
+[ext_resource type="PackedScene" uid="uid://cq6i0bosymdra" path="res://bird.tscn" id="1_lgnij"]
+[ext_resource type="PackedScene" uid="uid://dsckpa6ba6lcl" path="res://obstacles.tscn" id="2_fi3s1"]
+
+[node name="MainPlayers" type="Node2D"]
+
+[node name="Bird" parent="." instance=ExtResource("1_lgnij")]
+position = Vector2(324, 125)
+
+[node name="Obstacles" parent="." instance=ExtResource("2_fi3s1")]
+
+[node name="Obstacles2" parent="." instance=ExtResource("2_fi3s1")]
+position = Vector2(1450, -517)
+
+[node name="Obstacles3" parent="." instance=ExtResource("2_fi3s1")]
+position = Vector2(1174, -517)
+
+[node name="Obstacles4" parent="." instance=ExtResource("2_fi3s1")]
+position = Vector2(882, -517)
+
+[node name="Obstacles5" parent="." instance=ExtResource("2_fi3s1")]
+position = Vector2(626, -521)
+
+[node name="Obstacles6" parent="." instance=ExtResource("2_fi3s1")]
+position = Vector2(386, -525)
+
+[node name="Obstacles7" parent="." instance=ExtResource("2_fi3s1")]
+position = Vector2(126, -533)
